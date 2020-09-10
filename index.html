@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>PES Counselling</title>
+  </head>
+  <body class="amber lighten-5">
+    <div class="container matrix-container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel teal lighten-4">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="4" class="center-align">
+                    PES University Seat Availability Matrix
+                  </th>
+                </tr>
+                <tr>
+                  <th>CSE</th>
+                  <th>ECE</th>
+                  <th>ME</th>
+                  <th>BT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="CSE"></td>
+                  <td id="ECE"></td>
+                  <td id="ME"></td>
+                  <td id="BT"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select id="branch-select">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="ME">ME</option>
+            <option value="BT">BT</option>
+          </select>
+          <label class="black-text">Select Branch</label>
+        </div>
+      </div>
+      <div class="row" id="error">
+        <h6 class="center-align red-text">Please select a branch</h6>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <a class="waves-effect waves-light btn" id="submit-btn">Submit</a>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

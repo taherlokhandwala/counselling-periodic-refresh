@@ -1,0 +1,13 @@
+.matrix-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+table {
+  width: 100%;
+}
+#error {
+  display: none;
+}
